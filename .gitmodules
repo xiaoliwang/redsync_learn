@@ -1,0 +1,3 @@
+[submodule "redsync"]
+	path = redsync
+	url = git@github.com:xiaoliwang/redsync.git
