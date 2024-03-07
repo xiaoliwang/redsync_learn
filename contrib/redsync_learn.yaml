@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: redsync-learn
+spec:
+  template:
+    spec:
+      containers:
+      - name: redsync-learn
+        image: redsync-learn
+        imagePullPolicy: IfNotPresent
+      restartPolicy: Never
+  backoffLimit: 4
